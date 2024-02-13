@@ -4,7 +4,7 @@
     "repository": {
         "url": "https://github.com/bzm3r/panfmt"
     },
-    "description": "Use `pandoc` to format markdown files.",
+    "description": "Use `pandoc` to format markdown/typst files.",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.86.0"
@@ -13,18 +13,19 @@
         "Other"
     ],
     "activationEvents": [
-        "onLanguage:markdown"
+        "onLanguage:markdown",
+        "onLanguage:typst"
     ],
     "main": "./out/extension.js",
     "contributes": {
         "configuration": {
             "type": "object",
-            "title": "Pandoc based Markdown formatter",
+            "title": "Pandoc based markdown/typst formatter",
             "properties": {
                 "panfmt.enabled": {
                     "type": "boolean",
                     "default": true,
-                    "description": "Enable panfmt as a markdown formatter."
+                    "description": "Enable panfmt as a markdown/typst formatter."
                 },
                 "panfmt.pandocExePath": {
                     "type": "string",

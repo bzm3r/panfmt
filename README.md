@@ -17,22 +17,12 @@ This extension contributes the following settings:
 "panfmt.enabled": {
     "type": "boolean",
     "default": true,
-    "description": "Enable panfmt as a markdown formatter."
+    "description": "Enable panfmt as a markdown/typst formatter."
 },
 "panfmt.pandocExePath": {
     "type": "string",
     "default": "pandoc",
     "description": "Path to pandoc executable to use for formatting operations."
-},
-"panfmt.inputFormat": {
-    "type": "string",
-    "default": "commonmark",
-    "description": "Value for --from flag for `pandoc`. See https://pandoc.org/MANUAL.html#general-options"
-},
-"panfmt.outputFormat": {
-    "type": "string",
-    "default": "commonmark",
-    "description": "Value for --to option. See https://pandoc.org/MANUAL.html#general-options"
 },
 "panfmt.extraArgs": {
     "type": "array",
